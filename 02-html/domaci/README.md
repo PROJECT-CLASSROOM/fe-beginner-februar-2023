@@ -15,4 +15,4 @@ Nas sajt ne mora biti identican kao na dizajnu.
 * Ne koristiti nigde na stranici inline style.
 * Koristiti semanticke tagove gde to ima smisla.
 
-_ Napomena: ako vam bude tesko da odradite stilizaciju odradite samo HTML deo_
+ Napomena: ako vam bude tesko da odradite CSS stilizaciju odradite samo HTML deo 
