@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>SignUP Form</h1>
+
+    <form action="/dummy">
+        <label for="fname">Name</label>
+        <input type="text" name="fname" value="" placeholder="Please Enter Your Name" id="fname">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email"  value="" placeholder="Enter Email" id="email">
+        <br>
+
+        <input type="checkbox" name="notifications" id="notifications"> <label for="notifications">Do you want to recieve notifications?</label>
+        
+        <br>
+        
+        <label for="message">Message</label>   <br>
+        <textarea placeholder="Some Message" rows="16" cols="12" id="message" name="message"></textarea>  
+
+        <br>
+        <label for="course">Choose a course:</label>
+        <select id="course" name="course">
+            <option value="">--Select Option --</option>
+            <option value="html">HTML</option>
+            <option value="css" selected>CSS</option>
+            <option value="js">JavaScript</option>
+        </select>
+
+        <input type="submit" value="Sign UP">
+    </form>
+
+</body>
+</html>
