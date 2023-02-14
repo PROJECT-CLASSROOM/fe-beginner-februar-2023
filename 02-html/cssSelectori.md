@@ -78,6 +78,8 @@ Da bismo selektovali odredjeni element koji sadrzi odredjenu vrednost atributa k
 Napomena: 
 * Naziv klase ne sme poceti brojem.
 
+> 📖 https://www.w3schools.com/html/html_classes.asp
+
 
 ### 4. Univerzalni selektor 
 
