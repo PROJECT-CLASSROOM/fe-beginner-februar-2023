@@ -79,3 +79,52 @@ Napomena:
 * Naziv klase ne sme poceti brojem.
 
 
+### 4. Univerzalni selektor 
+
+Univerzalni selektor omogucava da selektujemo sve elemente na stranici.
+
+```css
+* {
+  text-align: center;
+}
+```
+
+Svi elementi na stranici ce biti centrirani.
+
+## Grupisanje selektora
+
+
+Kada više elemenata na stranci imaju istu css definiciju možemo da ih grupisemo.
+
+Umesto ovog:
+```css
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+```
+
+```css
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+```
+
+
+
+
+
+
+
