@@ -31,11 +31,11 @@ p {
 ### 2. ID selector
 
 Id je HTML atribut koji jedinstveno identifikuje HTML element.
-Nije dozvoljeno da na stranici imamo vise id atributa sa istom vrednoscu!
+Nije dozvoljeno da na stranici imamo više id atributa sa istom vrednošću!
 
 > 📖 [(https://www.w3schools.com/html/html_id.asp](https://www.w3schools.com/html/html_id.asp)
 
-id selektor omogucava nam da selektujemo HTML element na osnovu vrednosti id atributa.
+id selektor omogućava da selektujemo HTML element na osnovu vrednosti id atributa.
 
 Primer: 
 
@@ -52,16 +52,16 @@ Primer:
 
 Napomena: 
 * Naziv id je case-sensitive (razlikuje mala i velika slova)
-* Naziv ne sme sadzati razmake, tabove itd.
+* Naziv ne sme sadžati razmake, tabove itd.
 * Naziv mora imati barem jedan karakter.
-* Naziv ne sme poceti brojem.
+* Naziv ne sme početi brojem.
 
 
 ### 3. CLASS selector
 
-Slektor klase omogucava da selektujemo HTML element sa odredjenim atributom klase.
+Slektor klase omogućava da selektujemo HTML element sa određenim atributom klase.
 
-Da bismo selektovali odredjeni element koji sadrzi odredjenu vrednost atributa klase navodimo tacku (.) zatim sledi naziv klase.
+Da bismo selektovali odredjeni element koji sadrži određenu vrednost atributa klase navodimo tacku (.) zatim sledi naziv klase.
 
 
 ```css
@@ -76,14 +76,14 @@ Da bismo selektovali odredjeni element koji sadrzi odredjenu vrednost atributa k
 ```
 
 Napomena: 
-* Naziv klase ne sme poceti brojem.
+* Naziv klase ne sme početi brojem.
 
 > 📖 https://www.w3schools.com/html/html_classes.asp
 
 
 ### 4. Univerzalni selektor 
 
-Univerzalni selektor omogucava da selektujemo sve elemente na stranici.
+Univerzalni selektor omogućava da selektujemo sve elemente na stranici.
 
 ```css
 * {
