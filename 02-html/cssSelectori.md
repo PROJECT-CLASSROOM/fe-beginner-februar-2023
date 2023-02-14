@@ -7,7 +7,7 @@
 
 CSS selektori nam pružaju različite mogućnost da stilizujemo HTML elemete. 
 
-## Jednostavni selektori - 3 vrste
+## Osnovni selektori 
 
 ### 1. CSS element selector
 
@@ -61,7 +61,8 @@ Napomena:
 
 Slektor klase omogucava da selektujemo HTML element sa odredjenim atributom klase.
 
-Class selektor pocinje sa tackom (.) zatim sledi naziv klase.
+Da bismo selektovali odredjeni element koji sadrzi odredjenu vrednost atributa klase navodimo tacku (.) zatim sledi naziv klase.
+
 
 ```css
 .text-green {
@@ -73,3 +74,8 @@ Class selektor pocinje sa tackom (.) zatim sledi naziv klase.
 <p class="text-green">Ja sam text zelene boje</p>
 <h2 class="text-green">I ja sam text zelene boje</h2>
 ```
+
+Napomena: 
+* Naziv klase ne sme poceti brojem.
+
+
