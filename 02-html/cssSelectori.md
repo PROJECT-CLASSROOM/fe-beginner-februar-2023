@@ -7,4 +7,18 @@
 
 CSS selektori nam pružaju različite mogućnost da stilizujemo HTML elemete. 
 
+## Jednostavni selektori - 3 vrste
 
+### 1. CSS element selector
+
+Omogućava da selektujemo HTML element na osnovu njegovog imena.
+
+
+Primer: 
+
+```css
+p {
+  color: red;
+}
+
+```
