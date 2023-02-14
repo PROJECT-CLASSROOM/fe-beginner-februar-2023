@@ -59,3 +59,17 @@ Napomena:
 
 ### 3. CLASS selector
 
+Slektor klase omogucava da selektujemo HTML element sa odredjenim atributom klase.
+
+Class selektor pocinje sa tackom (.) zatim sledi naziv klase.
+
+```css
+.text-green {
+  color: green;
+}
+```
+
+```html
+<p class="text-green">Ja sam text zelene boje</p>
+<h2 class="text-green">I ja sam text zelene boje</h2>
+```
