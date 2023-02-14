@@ -22,3 +22,10 @@ p {
 }
 
 ```
+
+```html
+<p>Text crvene boje</p>
+ ```
+
+
+### 1. ID selector
