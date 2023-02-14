@@ -14,7 +14,7 @@ CSS selektori nam pružaju različite mogućnost da stilizujemo HTML elemete.
 Omogućava da selektujemo HTML element na osnovu njegovog imena.
 
 
-*Primer: * svi paragrafi na stranici ce biti obojani u crvenu boju
+* Primer: * svi paragrafi na stranici ce biti obojani u crvenu boju
 
 ```css
 p {
