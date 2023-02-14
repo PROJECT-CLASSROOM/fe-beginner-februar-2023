@@ -30,7 +30,22 @@ p {
 
 ### 1. ID selector
 
-Id je HTML atribut koji 
+Id je HTML atribut koji jedinstveno identifikuje HTML element.
+Nije dozvoljeno da na stranici imamo vise id atributa sa istom vrednoscu!
 
-> 📖 https://www.w3schools.com/html/html_id
+> 📖 [https://www.w3schools.com/html/html_id](https://www.w3schools.com/html/html_id.asp)
 
+id selektor omogucava nam da selektujemo HTML element na osnovu vrednosti id atributa.
+
+Primer: 
+
+```css
+#naslov {
+  color: blue;
+}
+
+```
+
+```html
+<h1 id="naslov">Naslov plave sam boje</h1>
+ ```
