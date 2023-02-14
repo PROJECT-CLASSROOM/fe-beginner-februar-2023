@@ -96,7 +96,7 @@ Svi elementi na stranici ce biti centrirani.
 
 Kada više elemenata na stranci imaju istu css definiciju možemo da ih grupisemo.
 
-Umesto ovog:
+Ovaj kod:
 ```css
 h1 {
   margin: 0;
@@ -114,6 +114,8 @@ p {
 }
 ```
 
+možemo zameniti ovim:
+
 ```css
 h1, h2, p {
   margin: 0;
@@ -122,6 +124,9 @@ h1, h2, p {
 
 ```
 
+Dakle, kada css selektori imaju isto pravilo možemo ih grupisati tako što ćemo ih razdvojiti zarezom.
+
+Na ovaj način imamo manje linija kod i kod je čitljiviji.
 
 
 
