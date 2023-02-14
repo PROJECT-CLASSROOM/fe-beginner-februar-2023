@@ -29,3 +29,8 @@ p {
 
 
 ### 1. ID selector
+
+Id je HTML atribut koji 
+
+> 📖 https://www.w3schools.com/html/html_id
+
