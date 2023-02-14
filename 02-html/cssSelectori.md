@@ -33,7 +33,7 @@ p {
 Id je HTML atribut koji jedinstveno identifikuje HTML element.
 Nije dozvoljeno da na stranici imamo vise id atributa sa istom vrednoscu!
 
-> 📖 [https://www.w3schools.com/html/html_id](https://www.w3schools.com/html/html_id.asp)
+> 📖 [(https://www.w3schools.com/html/html_id.asp](https://www.w3schools.com/html/html_id.asp)
 
 id selektor omogucava nam da selektujemo HTML element na osnovu vrednosti id atributa.
 
