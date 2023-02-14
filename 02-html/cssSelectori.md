@@ -28,7 +28,7 @@ p {
  ```
 
 
-### 1. ID selector
+### 2. ID selector
 
 Id je HTML atribut koji jedinstveno identifikuje HTML element.
 Nije dozvoljeno da na stranici imamo vise id atributa sa istom vrednoscu!
@@ -49,3 +49,13 @@ Primer:
 ```html
 <h1 id="naslov">Naslov plave sam boje</h1>
  ```
+
+Napomena: 
+* Naziv id je case-sensitive (razlikuje mala i velika slova)
+* Naziv ne sme sadzati razmake, tabove itd.
+* Naziv mora imati barem jedan karakter.
+* Naziv ne sme poceti brojem.
+
+
+### 3. CLASS selector
+
