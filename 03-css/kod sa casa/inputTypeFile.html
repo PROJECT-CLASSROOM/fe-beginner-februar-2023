@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .hide {
+            display: none; /* display sa vrednoscu none sakriva element*/
+        }
+
+    </style>
+    <script>
+        /*
+        function - kljucna rec koja kaze u pitanju je funkcija
+        openUpload - naziv funkcije, ime koje developer daje, kasnije cemo je po nazivu pozivati
+        () - male zagrade ovde oznacavanju parametre funckcije, u ovom slucaju funkcija nema parametre
+        */
+
+
+        function openUpload() {
+            //document ima u sebi metode (metode su ugradjene funkcije u js, to su js developeri "pripremili" za nas da koristimo)
+            //metoda getElementById omogucava da dobavimo element na osnovu njegovg atributa id
+            //.click() funkcija koja -> omogucava da simuliramo user click, odnosno otvaramo input sa id-jem 'file-to-upload'
+            document.getElementById('file-to-upload').click(); 
+        }
+    </script>
+</head>
+<body>
+    <!--Input koji smo sakrili sa clasom hide-->
+    <input class="hide" type="file" id="file-to-upload">
+
+    <!-- dugme koje na dogadjaj klikom misem poziva funkciju  openUpload-->
+    <button class="btn"  onclick="openUpload()">Upload Your CV</button>
+</body>
+</html>
