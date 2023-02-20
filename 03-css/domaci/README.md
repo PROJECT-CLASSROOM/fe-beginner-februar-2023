@@ -6,7 +6,7 @@ Preporuka:
   * Pisati css u odvojenom fajlu (external css)
   * Korsitit semanticke tagove
   * Videti da li se neki elementi ponavljaju, razmisliti o tome kada pises nazive klasa.
-  * Koristiti klase 
+  * Koristiti klase gde je to moguce
   * Koristiti neki od css reseta ( primer: https://gist.github.com/sankovicivana/ff2db3e721f93a2837bffea2eaca1e8d)
 
 
