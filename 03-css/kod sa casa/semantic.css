@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    /*sirina elementa odredjena je content + padding + border*/
+}
+/*css reset, da bi bilo kompatibilno 
+reset na svim pretrazivacima (chrome, mozzila, safari)
+*/
+body, html, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, .h1 {
+    font-size: 34px;
+}
+
+h2, .h2 {
+    font-size: 30px;
+}
+
+h3, .h3 {
+    font-size: 28px;
+}
+
+h4, .h4 {
+    font-size: 24px;
+}
+
+h5, .h5 {
+    font-size: 20px;
+}
+
+h6, .h6 {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.p-12 {
+    padding: 12px;
+}
+
+.my-12 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/*CSS Metodology - Sistem nazivanja klasa*/
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+/*da li zelim ovu klasu na svim sekcijama?
+.container, .row
+*/
+.section {
+    padding: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.gallery {
+    padding: 16px;
+    border: 1px solid goldenrod;
+}
+.gallery-img {
+    width: 100%; /*rasiri se koliko je sirok roditelj*/
+    height: 300px;
+    object-fit: cover; /*zadrzava aspect ration*/
+}
+
+.form {
+    /*margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;*/
+    margin: 12px auto;
+    width: 50%;
+}
+
+.form-label {
+
+}
+
+.form-input {
+    width: 100%;
+    padding: 16px 12px;
+    border-radius: 16px;
+}
+
+.form-area {
+    width: 100%;
+    resize: none;
+}
+
+/*
+
+Koristila bih ovu klasu
+ukoliko je dugme drugacije samo za 
+ovu formu
+.form-btn {
+
+}
+
+*/
+
+/*da se slicno dugme ponavlja na stranic vise puta*/
+
+.btn {
+    padding: 12px 24px;
+    /*marginu cu dodati dugmetu kroz utility klasu jer
+    ne verujem da cu imati situaciju da svako
+    dugme ima margine
+    */
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: cadetblue;
+    color: #ffffff;
+    border: 1px solid cadetblue;
+}
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: cadetblue;
+}
+
+.btn-secondary {
+    background-color: grey;
+    color: #f38f8f;
+}
+
+.btn-secondary:hover{
+    background-color: #f38f8f;
+    color: grey;
+}
+
+.card {
+    width: 33.33%;
+    border: 1px solid sienna;
+    padding: 16px;
+}
+
+.card-img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
+
+
+.card-body {
+    border: 1px solid sienna;
+    padding: 16px;
+}
+
+/*
+Suvisno jer vrv necu imati situaciju da
+svaki footer na stranici
+tj. njegov sadrzaj centriram
+footer {
+    text-align: center;
+}*/
+
+
+.border-top {
+    border-top: 1px solid goldenrod;
+}
