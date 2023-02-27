@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        .nav {
+            height: 72px;
+            text-align: center; /* center hor*/
+        }
+        .nav-list {
+            height: 100%;
+            line-height: 72px; /*Center verticaly*/
+        }
+
+        .nav-item {
+            display: inline-block; /* na svaki element moramo posebno da stavimo inline-block*/
+            margin-left: 12px;
+        }
+
+        .d-inline-block {
+            display: inline-block;
+        }
+
+        section {
+            margin: 24px 24px;
+        }
+
+        .card {
+            display: inline-block; 
+            width: calc(50% - 24px) ;
+            border: 2px solid black;
+            padding: 20px;
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+        .card-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Lorem Ipsum</h2>
+            <div class="cards">
+                <div class="d-inline-block">Neki Text 1</div>
+                <div  class="d-inline-block">Neki Text 2</div>
+            </div>
+            <h3 style="display: none">Ne zelim da ovaj naslov bude vidljiv na stranici</h3>
+            <h4 style="display: inline;">Ponasaj se kao inline element iako si block element</h4>
+            <br>
+            <br>
+            <label style="display: block;">Ovo je inline elemet ali se ponasa kao block</label>
+        </section>
+        <section id="about">
+            <h2>Lorem Ipsum</h2>
+            <div class="container">
+                <div class="card">
+                    <img class="card-img" src="https://picsum.photos/200/300">
+                    <div class="card-body">
+                        <h2>Lorem, ipsum.</h2>
+                        <p>Some txt</p>
+                    </div>
+                </div><div class="card">
+                    <img class="card-img" src="https://picsum.photos/200/300">
+                    <div class="card-body">
+                        <h2>Lorem, ipsum.</h2>
+                        <p>Some txt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Lorem Ipsum</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos rem assumenda aliquid, ipsam odit enim nulla consectetur doloremque eius perspiciatis modi debitis iure blanditiis tempora ullam obcaecati reprehenderit hic cum? Reprehenderit molestias, voluptatem laudantium nemo tenetur cumque id dolor, beatae saepe, nesciunt maiores! Consectetur praesentium velit itaque facilis possimus amet recusandae vitae animi aliquam illo, quos fuga earum iure eveniet nam dolor delectus? Perspiciatis aut placeat voluptate vitae eveniet provident eligendi. Quia eum sit cupiditate ullam asperiores totam assumenda, cum numquam quas, reprehenderit, animi reiciendis quisquam! Laudantium, illum eaque ad ipsa quod tenetur in omnis, eius cumque quisquam quos ab. Ipsum porro cumque eaque quam eos alias deserunt magni nostrum beatae aliquam ut dolorem natus voluptas non aut saepe id quas, totam, facilis rerum excepturi error perferendis incidunt in. Et hic repellat illo facere fuga molestiae voluptatibus distinctio aut delectus accusamus eius modi vero ex quod culpa quibusdam assumenda vel non ea, aperiam iusto debitis asperiores? Animi, culpa soluta. Soluta reprehenderit, repudiandae ut at facere quam exercitationem repellat ad, nostrum voluptas, in praesentium velit ab eligendi voluptatem voluptate animi deserunt nesciunt tempora blanditiis error. Recusandae quia, necessitatibus mollitia officia amet odit alias sed quis velit aspernatur sapiente a laudantium! Dolores fugit maxime nulla enim praesentium at possimus quibusdam id. Maiores beatae consequatur consectetur ipsam cum tempore non, officiis, explicabo ab quasi exercitationem repellendus ratione itaque laboriosam sapiente impedit nesciunt voluptatem maxime provident, molestiae delectus?</p>
+        </section>
+    </main>
+
+</body>
+</html>

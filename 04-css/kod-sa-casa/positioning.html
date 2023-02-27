@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        .hero-image {
+            background-image: url('https://picsum.photos/600/300'); /*Slika koju korsiti*/
+            background-color: grey;
+            height: 300px; /*Moramo definisati visinu slike*/
+            background-position: center; /*Centriramo sliku*/
+            background-repeat: no-repeat; /*Ne ponavlja se slika hor i ver*/
+            background-size: cover; /* rezise image da pokrije ceo kontainer*/
+            position: relative;  /*da bi absolute radilo, roditelj mora biti relative*/
+        }
+
+
+        h2 {
+            color: red;
+            position: absolute; /*pozicioniramo u osnosu na roditeljski elelemet*/
+            bottom: 2px;
+            left: 32px;
+            right: 12px;
+        }
+
+        .container {
+            position: relative;
+        }
+        .container-img {
+            width: 100%;
+            height: 360px;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+        .bottom-right {
+            position: absolute; /*absolute radi samo ako je roditelj relative*/
+            bottom: 12px; /* top, left, bottom, rigth mogu samo da se koriste ako smo prethodno naveli position absolute*/
+            right: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position Absolute</h1>
+    <div class="hero-image">
+        <h2>Hello World!</h2>
+    </div>
+
+    <p>Drugi Primer</p>
+    <br>
+    <div class="container">
+        <img  class="container-img" src="https://picsum.photos/600/300" alt="" >
+        <h3 class="top-left">Top Left Naslov</h3>
+        <h3 class="bottom-right">Bottom Right Naslov</h3>
+    </div>
+
+</body>
+</html>
