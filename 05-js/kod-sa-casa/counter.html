@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function uvecajZaJedan() {
+            //uzimamo vrednost koja se nalazi unutar elementa sa id 'counter'
+            let currentCounter = document.getElementById('counter').innerHTML;
+            //trenutno je currentCounter tipa string jer html sadrzaj izmedju tagova gleda kao tekst
+            // pre nego sto ga uvecamo za jedan moramo ga pretvoriti iz stringa u broj
+            currentCounter = Number(currentCounter);
+            //uvecavamo za jedan
+            currentCounter += 1; //currentCounter = currentCounter + 1
+
+            document.getElementById('counter').innerHTML = currentCounter;
+        }
+
+        function umanjiZaJedan() {
+            //uzimamo vrednost koja se nalazi unutar elementa sa id 'counter'
+            let currentCounter = document.getElementById('counter').innerHTML;
+            //trenutno je currentCounter tipa string jer html sadrzaj izmedju tagova gleda kao tekst
+            // pre nego sto ga uvecamo za jedan moramo ga pretvoriti iz stringa u broj
+            currentCounter = Number(currentCounter);
+            //uvecavamo za jedan
+            currentCounter -= 1; //currentCounter = currentCounter + 1
+
+            document.getElementById('counter').innerHTML = currentCounter;
+        }
+
+        //function - kaze u pitanju je funkcija
+        //counterFunction - naziv koji programer definise
+        //u malim zagradama slede parametri funkcije, i funkcija moze da nema parametre ili da ima 1 ili vise 
+        function counterFunction(operation) {
+            let currentCounter = document.getElementById('counter').innerHTML;
+            currentCounter = Number(currentCounter);
+
+            //da li je mozda operacija oduzimanje
+            if (operation == 'oduzimanje') { //ako jeste 
+                currentCounter -= 1;         //counter se umanjuje za jedan
+            } else if (operation == 'sabiranje') {  //ako prvi uslov nije tacan, tek tada proveravamo drugi uslov
+                currentCounter += 1; // ako je drugi uslov tacan uvecavamo za jedan
+            } else { //ukoliko ni jedan od ova dva uslova nije tacan sigurno propada u else deo, posle nastavlja dalje da izvrsava kod
+                alert('undefined operator');
+            }
+            
+            //propada ovde
+
+            //dobavljamo element gde zelimo da ispisemo vrenost sa get Element By Id
+            // sa innerHTML upisujemo dodeljenu vrednost koja se nalazi u currentCounter
+            document.getElementById('counter').innerHTML = currentCounter;
+
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <button onclick="counterFunction('oduzimanje')">-</button>
+        <div id="counter">0</div>
+        <button type="submit" onclick="counterFunction('sabiranje')" >+</button>
+
+        <!--<button onclick="umanjiZaJedan()">-</button>
+        <div id="counter">0</div>
+        <button onclick="uvecajZaJedan()" >+</button>-->
+    </main>
+</body>
+</html>

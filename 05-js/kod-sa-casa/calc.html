@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-error {
+            color: red;
+        }
+
+    </style>
+    <script>
+
+        function saberi() {
+            let x = document.getElementById('first-number').value;
+            //console.log(typeof(x))
+            x = Number(x);
+
+            //ako je x jednako sa nula broj upada u prve viticaste zagrade,
+            // ako x nije jednako sa nula upada u druge viticaste zagrade
+            if (x == 0) { // 0 == 0
+                //alert('Unesi Broj veci od nule');
+                document.getElementById("error-fist-number").innerHTML = 'Broj mora biti veci od nule.'
+            } else {
+                //alert('Broj je veci od nule')
+                document.getElementById("error-fist-number").innerHTML = '';
+            }
+
+            let y = document.getElementById('sec-number').value;
+            y =  Number(y);
+
+            if (y == 0) {
+                document.getElementById('error-sec-number').innerHTML = 'Broj mora biti veci od nule'
+            } else {
+                document.getElementById('error-sec-number').innerHTML = '';
+            }
+
+
+
+            /*let name = document.getElementById('name').value;
+
+            if (name == '') {
+                alert('Please Enter Name');
+            }*/ 
+        }
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+    <label>X = </label>
+    <input type="number" min="0" value="" id="first-number"  name="prvi-broj">
+    <p class="text-error" id="error-fist-number"></p>
+    <br>
+
+    <label>Y = </label>
+    <input type="number" min="0" value="" id="sec-number" >
+    <p class="text-error" id="error-sec-number"></p>
+    <br>
+
+    <button onclick="saberi()" >Saberi</button>
+
+
+    <input type="text" value="" id="name" name="name"> 
+
+</body>
+</html>

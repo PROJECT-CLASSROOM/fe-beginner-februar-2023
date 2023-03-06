@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function onFormSubmit(event) {
+            event.preventDefault(); //nemoj se da se ponasas kako se inace ponasas
+            console.log(event)
+
+            let name = document.getElementById('name').value;
+            if (name == '') {
+                alert('Moras uneti ime')
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="onFormSubmit(event)" action="/serverPage">
+        <input type="text" value="" id="name" name="name"> 
+
+        <button type="submit">Log In</button>
+    </form>
+</body>
+</html>

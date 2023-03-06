@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        console.log('Hello World');
+
+        function onButtonClick() {
+            alert('Button Clicked');
+        }
+
+        function saberi() {
+            let x = 5; //sada je x 5
+            let y = 6;
+            console.log(x);
+            x = 10;   //sada je x 10
+            console.log(x);
+            x = x + 2;   //sada je x 12
+            console.log(x);
+
+            y = y * x;
+
+            console.log(y)
+            
+            let i = 2;
+            i = i + 1;
+
+            console.log(i); //i je 3
+
+            i++; //inkrementovanje   i = i + 1;
+            console.log(i); //i je 4
+
+            i += 2; // i = i + 2
+            console.log(i); //i je 6
+        }
+
+        function sakrij() {
+           //let el = document.getElementById('tekst');
+           //console.log(el);
+           document.getElementById('tekst').style.display = "none";
+
+        }
+
+        function prikazi() {
+            document.getElementById('tekst').style.display = "block";
+        }
+        
+
+    </script>
+    
+</head>
+<body>
+
+    <button onclick="saberi()" >Saberi</button>
+    <button onclick="onButtonClick()">Click Me!</button>
+    <br>
+    <br>
+
+    <p id="tekst">Sakrij ovaj tekst</p>
+    <button onclick="sakrij()"> Sakrij</button>
+    <button onclick="prikazi()"> Prikazi se</button>
+
+    <script src="./index.js"></script>
+</body>
+</html>
