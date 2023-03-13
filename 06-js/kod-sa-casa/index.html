@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body, h1, h2, h3, h4,h5, h6, p , li, ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+
+        #home {
+            display: block;
+        }
+        #about {
+            display: none;
+        }
+        #blog {
+            display: none;
+        }
+        #contact {
+            display: none;
+        }
+        .header {
+            height: 72px;
+            background-color: beige;
+             border-bottom: 1px solid;
+        }
+
+        .nav {
+            height: 100%;
+            line-height: 72px;
+            text-align: center;
+        }
+
+        .nav-list {
+            height: 100%;
+        }
+        .nav-item {
+            display: inline-block;
+            color: grey;
+            margin: 0 4px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* element liste li koji u sebi ima klasu active */
+        li.active {
+            color: black;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: inherit; /*nasledi boju od roditelja*/
+        }
+
+        .nav-item:hover {
+            color: hotpink;
+        }
+
+        .wrapper {
+            padding: 32px 24px 0;
+        }
+    </style>
+    <script>
+        function onNavChange(navId) {
+            console.log(navId)
+            //ako korisnik klikne na home, prikazi home sekciju, ali nemoj prikazati about blog contact
+            if (navId == 'home') {
+                document.getElementById('home').style.display = 'block'; //prikazi se
+                document.getElementById('about').style.display = 'none';
+                document.getElementById('blog').style.display = 'none';
+                document.getElementById('contact').style.display = 'none';
+
+                document.getElementById('nav-home').classList.add('active'); //
+                document.getElementById('nav-about').classList.remove('active');
+                document.getElementById('nav-blog').classList.remove('active');
+                document.getElementById('nav-contact').classList.remove('active');
+               
+
+            } else if (navId == 'about') {
+                document.getElementById('home').style.display = 'none'; //prikazi se
+                document.getElementById('about').style.display = 'block';
+                document.getElementById('blog').style.display = 'none';
+                document.getElementById('contact').style.display = 'none';
+
+                document.getElementById('nav-home').classList.remove('active'); //
+                document.getElementById('nav-about').classList.add('active');
+                document.getElementById('nav-blog').classList.remove('active');
+                document.getElementById('nav-contact').classList.remove('active');
+            } else if (navId == 'blog') {
+                document.getElementById('home').style.display = 'none'; //prikazi se
+                document.getElementById('about').style.display = 'none';
+                document.getElementById('blog').style.display = 'block';
+                document.getElementById('contact').style.display = 'none';
+
+                document.getElementById('nav-home').classList.remove('active'); //
+                document.getElementById('nav-about').classList.remove('active');
+                document.getElementById('nav-blog').classList.add('active');
+                document.getElementById('nav-contact').classList.remove('active');
+            } else  if (navId == 'contact') {
+                document.getElementById('home').style.display = 'none'; //prikazi se
+                document.getElementById('about').style.display = 'none';
+                document.getElementById('blog').style.display = 'none';
+                document.getElementById('contact').style.display = 'block';
+
+                document.getElementById('nav-home').classList.remove('active'); //
+                document.getElementById('nav-about').classList.remove('active');
+                document.getElementById('nav-blog').classList.remove('active');
+                document.getElementById('nav-contact').classList.add('active');
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+               <li class="nav-item active" onclick="onNavChange('home')" id="nav-home"><a class="nav-link" href="#home">Home</a></li> 
+               <li class="nav-item" onclick="onNavChange('about')"  id="nav-about"><a class="nav-link" href="#about">About</a></li> 
+               <li class="nav-item" onclick="onNavChange('blog')"  id="nav-blog"><a class="nav-link" href="#blog">Blog</a></li> 
+               <li class="nav-item" onclick="onNavChange('contact')"  id="nav-contact"><a class="nav-link" href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section id="home">
+                <h2>Home</h2>
+
+            </section>
+
+            <section id="about">
+                <h2>About</h2>
+
+            </section>
+            <section id="blog">
+                <h2>Blog</h2>
+
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+
+            </section>
+        </div>
+    </main>
+    
+</body>
+</html>

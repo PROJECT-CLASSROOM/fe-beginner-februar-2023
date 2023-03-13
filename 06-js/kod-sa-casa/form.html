@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error-message {
+            color: red;
+        }
+        .success-msg {
+            color: green;
+        }
+    </style>
+    <script>
+        function onValidateForm(event) {
+            event.preventDefault(); //nemoj da radis ono sto inace radis
+            //console.log(event)
+            //reset previous values
+            document.getElementById('errorName').innerHTML = '';
+            document.getElementById('errorLname').innerHTML = '';
+            document.getElementById('errorEmail').innerHTML  = '';
+            document.getElementById('errorAge').innerHTML  = '';
+
+
+            let name = document.getElementById('name').value;
+            let lname = document.getElementById('lname').value;
+            let email = document.getElementById('email').value;
+            let age = document.getElementById('age').value; //14
+
+            if (name == '') {
+                document.getElementById('errorName').innerHTML = 'Please Enter your Name';
+            } else {
+                document.getElementById('successName').innerHTML = 'Valid Name';
+            }
+
+            if (lname == '') {
+                document.getElementById('errorLname').innerHTML = 'Please Enter your last name';
+            }
+
+            if (email == '') {
+                document.getElementById('errorEmail').innerHTML = 'Please Enter your last name';
+            }
+
+            if (age == '') { // ako je prvi uslov tacan ne proverava ostale uslove
+                document.getElementById('errorAge').innerHTML = 'Please Enter valid age between 18 and 64';
+
+             } else if (age < 18) {  //uneo je manje od 18 ili je uneo veci broj od 64
+                // ako je ovaj uslov tacan ispisuje poruku i ne proverava ostale uslove
+                document.getElementById('errorAge').innerHTML = 'Age can not be less the 18';
+             } else if (age > 64) { //ako prethodni uslovi nisu tacni, proverava ovaj uslov, ako je tacan radi telo petlje
+                document.getElementById('errorAge').innerHTML = 'Age can not be greater the 64';
+             }
+
+            /*if (name == '') {
+                //console.log('Nije uneo ime')
+                alert('Please Enter your name');
+                return; //napusti funkciju nemoj da izvrsavas kod dalje
+            }   
+
+            if (lname == '') {
+                alert('Please enter yout lastname');
+            }*/
+
+
+
+        }
+    </script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <form onsubmit="onValidateForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" value="" id="name" name="name" >
+                <br>
+                <p class="error-message" id="errorName"></p>
+                <p class="success-msg" id="successName"></p>
+                <label>Last Name:</label>
+                <input  type="text" value="" id="lname" name="lname" >
+                <br>
+                <p class="error-message" id="errorLname"></p>
+                <label for="age">Age</label>
+                <input type="number"  id="age" name="age" value="18">
+                <br>
+                 <p class="error-message" id="errorAge"></p>
+                <label for="email">Email:</label>
+                <input type="email" value="" name="email" id="email" >
+                <br>
+                <p class="error-message" id="errorEmail"></p>
+                <label for="subject">Subject:</label>
+                <input type="text" value="" name="subject" id="subject" >
+                <br>
+
+                <label for="message">Massage:</label>
+                <input type="text" value="" name="message" id="message">
+                <br>
+
+                <button type="submit"> Sing Up</button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

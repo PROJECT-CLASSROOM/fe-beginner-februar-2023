@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function calcSuma() {
+            let n = document.getElementById('n').value; //value dodazi kao string '1' 1
+            n = Number(n); //3
+            let suma = 0;
+
+            for (let i = 1; i <= n; i++) {
+                console.log("i  je", i);
+                suma = suma + i;
+            } 
+
+            console.log("Suma je ", suma);
+
+            console.log('for petalja je zavrsena')
+
+
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <label>Unesi n:</label>
+    <input type="number" value="0" id="n">
+    <button onclick="calcSuma()">Izracunaj</button> 
+</body>
+</html>
